@@ -1,0 +1,7 @@
+.form-container{
+    display:flex;
+    align-items: flex-end;  /* vertical */
+    justify-content: center; /* horizontal */
+    gap:1rem;
+}
+

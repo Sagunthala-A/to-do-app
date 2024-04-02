@@ -1,0 +1,36 @@
+.input-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width:100%;
+    gap:4px;
+}
+
+.input-container{
+    display:flex;
+    align-items: flex-end;  /* vertical */
+    justify-content: center; /* horizontal */
+    gap:1rem;
+}
+
+
+.input-items{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-items{
+    display:flex;
+    flex-direction:column; 
+    justify-content:center; /* vertical */
+    align-items: flex-start; /* horizontal */
+    row-gap: 1rem; 
+}
+
+.input-items > button{
+    padding:5px 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    /* margin-left:15px; */
+    /* margin-bottom: 15px; */
+}
