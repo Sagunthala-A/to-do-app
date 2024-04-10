@@ -1,10 +1,14 @@
 import React,{useState,useEffect, useContext} from 'react'
 
 // import '../Styles/Contents.css'
-// import Search from './Search';
+// import Search from '../Search/Search';
 import GetInput from './../GetInput/GetInput';
 import DataContext from './../../data/DataContext';
 import AddTask from './../AddTask/AddTask';
+import SearchTask from '../SearchTask/SearchTask'
+import CompletedTask from '../Pages/CompletedTask';
+import AllTasks from '../Pages/AllTasks';
+import InProgressTasks from '../Pages/InProgressTasks';
 
 // const staticItems = [
 //     {
@@ -60,6 +64,12 @@ useEffect (()=>{
             {/* <Search 
                 handleFormSubmit = {handleFormSubmit}
             ></Search> */}
+            <div style={{display:"flex",alignItems:"end",gap:"20px"}}>
+                <InProgressTasks/>
+                <CompletedTask/>
+                <AllTasks/>
+            </div>
+            <SearchTask/>
             <AddTask
                 taskItemsList = {taskItemsList}
                 handleAddTask = {handleAddTask}  
