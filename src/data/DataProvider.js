@@ -5,9 +5,8 @@ function DataProvider(props) {
   const [title,setTitle] = useState("");
   const [description,setDescription] = useState("");
   const [taskItemsList,setTaskItemsList] = useState([]);
-  const [searchValue,setSearchValue] = useState('')
-  const [isEdit,setIsEdit] = useState(false);
-  const [isComplete,setIsComplete] = useState(false);
+  const [searchVal,setSearchVal] = useState('');
+  const [completedTaskList,setCompletedTaskList] = useState([]); 
 
   function handleFormSubmit (e){
         e.preventDefault();
@@ -38,7 +37,6 @@ function DataProvider(props) {
         localStorage.setItem("tasks",JSON.stringify(updatedList))
     }
     function handleCompleteTask(id){
-      setIsComplete(!isComplete)
         const updatedList = taskItemsList.map((task) => {
             if (task.id === id) {
                 // Use spread syntax to create a new object with the updated completed property
@@ -68,9 +66,8 @@ function DataProvider(props) {
       title,setTitle,
       description,setDescription,
       taskItemsList,setTaskItemsList,
-      searchValue,setSearchValue,
-      isEdit,setIsEdit,
-      isComplete,setIsComplete,
+      searchVal,setSearchVal,
+      completedTaskList,setCompletedTaskList,
       handleFormSubmit,
       handleAddTask,
       handleDeleteTask,

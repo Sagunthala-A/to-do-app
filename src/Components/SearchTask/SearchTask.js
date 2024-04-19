@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
+import DataContext from '../../data/DataContext';
+import './SearchTask.css';
 
 const SearchTask = () => {
+  const {searchVal,setSearchVal} = useContext(DataContext)
   return (
-    <div>SearchTask
-        <input/>
+    <div className='searchTask'>
+        <input 
+          type="search"
+          value={searchVal}
+          onChange={(e)=>{setSearchVal(e.target.value)}}
+          placeholder='Search your task in here...'
+        />
     </div>
   )
 }

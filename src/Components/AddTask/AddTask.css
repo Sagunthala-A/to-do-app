@@ -1,7 +1,5 @@
 .taskBtns {
     padding:.5rem .8rem;
-    /* background-color: transparent;
-    border:none; */
     margin:10px .4rem;
     border-radius:10px;
     border:none;
@@ -30,40 +28,11 @@
     cursor: pointer;
 }
 
-/* .deleteBtn:hover,
-.completeBtn:hover,
-.editBtn:hover{
-    animation:rotate 1s ease-in-out 1;
-    filter:brightness(120%)
-} */
-/* to work this add disabled in button  */
-/* .editBtn:disabled,
-.deleteBtn:disabled
-{
-    background-color: gray;
-    cursor: not-allowed;
-    animation: none;
-    filter:brightness(100%)
-} */
-
 .delIcon.disabled, .editIcon.disabled {
   opacity: .5; /* Reduce opacity to visually indicate the icon is disabled */
   pointer-events: none; /* Disable pointer events to prevent interaction */
 }
 
-/* .redB:hover,
-.redB > .MuiSvgIcon:hover {
-    animation: rotateAndScale 1s ease-in-out 1;
-}
-
-@keyframes rotateAndScale {
-    0% {
-        transform: rotate(0deg) scale(1);
-    }
-    100% {
-        transform: rotate(360deg) scale(1.2);
-    }
-} */
 @keyframes rotate{
     0%{
         transform: rotate(0deg);
@@ -71,12 +40,9 @@
     100%{
         transform: rotate(360deg);
     }
-    /* 100%{
-        transform: rotate(0deg);
-    } */
 }
 
-.listBox > li>  h3{
+.lists > li>  h3{
     margin-bottom:.3rem;
 }
 
@@ -89,8 +55,13 @@
 
 .ulWrapper{
     padding:5px;
+    width:100%;
 }
 
+.ulWrapper > h2{
+    text-align: center;
+    margin-top: 1.4rem;
+}
 
 
 /* Apply rotation animation on hover */
@@ -136,11 +107,7 @@
     font-size: 1.5rem;
 }
 
-
 .completedLists:hover{
-    /* background-color: rgb(139, 206, 139);
-    background-color: 	rgb(152,251,152,.5); */
-    /* filter:brightness(80%) */
     background-color: transparent;
 }
 
@@ -154,7 +121,6 @@
     left:.5%;
     z-index:100;
     color:rgb(19, 70, 19);
-    /* color:rgb(37, 81, 37); */
     animation: scaleComplete 700ms linear infinite alternate;
 }
 
@@ -169,5 +135,62 @@
     }
     100%{
         transform: scale(1.3);
+    }
+}
+
+ul{
+    list-style-type:decimal;
+}
+
+/* media queries */
+@media screen and (max-width:768px){
+    .lists{
+    margin:5px 5px;
+    padding: 10px 10px;
+}
+
+.ulWrapper{
+    padding:5px;
+    width:100%;
+}
+
+ul > h2{
+    font-size: 16px;
+}
+.lists > h3{
+    font-size: 1.1rem;
+}
+.lists  p{
+    font-size: .9rem;
+}
+.lists{
+    width:100%;
+}
+.ulWrapper{
+}
+}
+
+@media screen and (max-width:600px){
+    .lists{
+        margin:2px 2px;
+        padding: 10px 7px;
+    }
+
+    .ulWrapper{
+        padding:3px 0px;
+        width:100%;
+    }
+
+    ul > h2{
+        font-size: 15px;
+    }
+    .lists > h3{
+        font-size: 1rem;
+    }
+    .lists  p{
+        font-size: .8rem;
+    }
+    .lists{
+        width:100%;
     }
 }

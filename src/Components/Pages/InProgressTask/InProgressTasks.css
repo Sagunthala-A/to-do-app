@@ -1,0 +1,29 @@
+.inProgressList__wrapper{
+    width:100%;
+}
+
+.inProgressList__list{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin:10px 10px;
+    padding: 5px 10px;
+    border-radius:10px;
+    background-color: rgba(255, 255, 255, 0.379);
+    background-color: rgba(245, 245, 104, 0.502);
+}
+
+.inProgressList{
+    width:100%;
+}
+
+.inProgressList__list >h3{
+    margin-bottom:10px;
+}
+
+.inProgressList__list >p{
+    margin-bottom:10px;
+}
+
+.inProgressList > h2{
+    text-align: center;
+    margin-top: 2rem;
+}

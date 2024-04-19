@@ -24,6 +24,10 @@
     font-size: 1rem;
 }
 
+.input-items > input:hover::placeholder{
+    color:black;
+    font-size:1.08rem;
+}
 
 .input-items{
     display: flex;
@@ -45,8 +49,6 @@
     background-color: rgb(188, 135, 248);
     border:none;
     border-radius: 5px;
-    /* margin-left:15px; */
-    /* margin-bottom: 15px; */
     color:white;
     font-size: 1rem;
     opacity:1;
@@ -58,12 +60,54 @@
     font-weight:600;
 }
 
-/* .input-container{
-    position: sticky;
-    top:0;
-    z-index: 1000;
-} */
-
 .input-items > button:hover{
     filter: brightness(110%);
+}
+
+/* media queries */
+
+@media screen and (max-width:992px){
+    .input-items > input,
+    .input-items > button{
+        padding:.7rem 1.4rem;
+        font-size: .9rem;
+    }
+    .input-items > label{
+        font-size:1.17rem;
+        margin-left:.2rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    .input-items > input,
+    .input-items > button{
+        padding:.7rem 1.4rem;
+        font-size: .9rem;
+        width:100%;
+    }
+    .input-items > label{
+        font-size:1.15rem;
+        margin-left:.2rem;
+    }
+    .input-items{
+        width:85%;
+        margin: auto;
+    }
+
+    .input-container{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        /* margin-left:1rem; */
+    }
+    .input-items > button{
+        margin-top:.3rem;
+    }
+    .input-items > label{
+        margin-bottom:-.9rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    
 }

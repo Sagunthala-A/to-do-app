@@ -3,7 +3,7 @@ import DataContext from '../../data/DataContext';
 import './GetInput.css'
 
 const GetInput = () => {
-  const {handleFormSubmit,handleAddTask,title,setTitle,description,setDescription,taskItemsList} = useContext(DataContext)
+  const {handleFormSubmit,handleAddTask,title,setTitle,description,setDescription} = useContext(DataContext)
   return (
 
     <form className='input-container' onSubmit={handleFormSubmit}> 
@@ -29,9 +29,8 @@ const GetInput = () => {
           onChange = {(e) => {setDescription(e.target.value)}}
         ></input>
       </div>
-
          <div className='input-items'>
-          <button onClick={handleAddTask}>Add</button>
+          <button onClick={handleAddTask} className='addBtn'>Add</button>
          </div>  
 
          
