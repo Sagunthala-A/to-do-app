@@ -16,3 +16,10 @@
 .searchTask > input:focus{
     box-shadow: none;
 }
+
+@media screen and (width:600px){
+    .searchTask > input{
+        background-color: red;
+        font-size: .2rem;
+    }
+}

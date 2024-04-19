@@ -145,29 +145,27 @@ ul{
 /* media queries */
 @media screen and (max-width:768px){
     .lists{
-    margin:5px 5px;
-    padding: 10px 10px;
-}
+        margin:5px 5px;
+        padding: 10px 10px;
+    }
 
-.ulWrapper{
-    padding:5px;
-    width:100%;
-}
+    .ulWrapper{
+        padding:5px;
+        width:100%;
+    }
 
-ul > h2{
-    font-size: 16px;
-}
-.lists > h3{
-    font-size: 1.1rem;
-}
-.lists  p{
-    font-size: .9rem;
-}
-.lists{
-    width:100%;
-}
-.ulWrapper{
-}
+    ul > h2{
+        font-size: 16px;
+    }
+    .lists > h3{
+        font-size: 1.1rem;
+    }
+    .lists  p{
+        font-size: .9rem;
+    }
+    .lists{
+        width:100%;
+    }
 }
 
 @media screen and (max-width:600px){
@@ -192,5 +190,9 @@ ul > h2{
     }
     .lists{
         width:100%;
+    }
+    .completedTask{
+        top:-2%;
+        left:-10%;
     }
 }

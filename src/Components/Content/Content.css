@@ -94,6 +94,7 @@
         left:0;
         width:100%;
         height:60px;
+        gap:0rem;
         background-color: rgba(0, 0, 0, 0.532);
         background-color: rgba(255, 255, 255, 0.532);
         /* background-color: rgb(211,179,253); */
@@ -108,30 +109,42 @@
         margin:0;
         padding:0;
     }
+    
+    .taskLinksBtnsGrps > a{
+        font-size:.6rem;
+        width:26%;
+    }
+    .taskLinksBtnsGrps > a:nth-child(1){
+        width:26%;
+    }
+    .taskLinksBtnsGrps > a:nth-child(2){
+        width:37%;
+    }
+    .taskLinksBtnsGrps > a:nth-child(3){
+        width:31%;
+    }
 
     .all{
-        bottom:0%;
-        left:2%;
+        bottom:-1%;
+        left:-1%;
         background-color:rgba(0, 0, 255, 0.84);
         
     }
     .complete{
-        bottom:0%;
-        left:30%;
+        bottom:-1%;
+        left:26.5%;
         background-color:green;
     }
     .progress{
-        bottom:0%;
-        right:2%;
+        bottom:-1%;
+        right:-1%;
         background-color:rgb(230, 230, 64);
     }
+
     .taskLinksBtnsGrps .active {
         filter: brightness(160%);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, padding-top 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
         animation: taskBtnAnimation 2s linear infinite;
-    }
-
-    .taskLinksBtnsGrps .all.active {
     }
 
     .taskLinksBtnsGrps .complete.active {

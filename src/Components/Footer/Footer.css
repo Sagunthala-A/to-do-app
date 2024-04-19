@@ -1,0 +1,9 @@
+footer > h3{
+    margin-top:2.3rem;
+}
+
+@media screen and (max-width:600px){
+    footer > h3{
+        font-size: .9rem;
+    } 
+}

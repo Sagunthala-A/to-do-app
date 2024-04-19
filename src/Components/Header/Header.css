@@ -1,0 +1,16 @@
+header > h3{
+        font-size:30px;
+        background-image: radial-gradient(circle at 0.2% 0.5%, rgb(252, 165, 241) 0%, rgb(181, 255, 255) 100.2%);
+        /* background-image: linear-gradient(to top, rgb(252, 165, 241), rgb(181, 255, 255)); */
+        color: transparent; 
+        font-weight: 600;
+        text-shadow: 2px 2px 30px white;
+        -webkit-background-clip:text;
+        margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width:600px){
+    header > h3{
+        font-size: 1.6rem;
+    } 
+}
