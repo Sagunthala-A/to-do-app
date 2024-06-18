@@ -173,12 +173,10 @@ ul{
         margin:2px 2px;
         padding: 10px 7px;
     }
-
     .ulWrapper{
         padding:3px 0px;
         width:100%;
     }
-
     ul > h2{
         font-size: 15px;
     }
@@ -196,3 +194,4 @@ ul{
         left:-10%;
     }
 }
+
